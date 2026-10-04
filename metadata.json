@@ -1,0 +1,6 @@
+{
+  "name": "Dapur MBG - Sistem Operasional & Pemenuhan Gizi",
+  "description": "Portal operasional Dapur MBG (Makan Bergizi Gratis): showcase profil dapur, modul kontrol Ahli Gizi (Label Gizi, Sampah, Suhu Ruangan) dan modul Administrasi Dapur (Sanitasi, Gudang, FIFO/FEFO, Stok Opname, Kualitas Air).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

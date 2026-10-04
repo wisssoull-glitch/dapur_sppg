@@ -1,0 +1,113 @@
+/**
+ * ============================================================================
+ * GLOBAL STYLES & TAILWIND SETUP - DAPUR MBG
+ * ============================================================================
+ * Penanda: Style Konfigurasi, Tema Gelap & Terang, Animasi Kartu Terapung
+ * (Floating ID Card A, B, C), Font Family, dan Custom Scrollbar.
+ * ============================================================================
+ */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* --- ANIMASI FLOATING ID CARD (KARTU MENGAMBANG) --- */
+@keyframes floatGentleA {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes floatGentleB {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(-1deg);
+  }
+}
+
+@keyframes floatGentleC {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-13px) rotate(0.8deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-float-a {
+  animation: floatGentleA 5s ease-in-out infinite;
+}
+
+.animate-float-b {
+  animation: floatGentleB 6s ease-in-out infinite 0.5s;
+}
+
+.animate-float-c {
+  animation: floatGentleC 5.5s ease-in-out infinite 1s;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* --- THEME ROOT CONFIGURATION --- */
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
