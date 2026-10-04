@@ -106,10 +106,10 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
               <h1 className={`text-xl sm:text-2xl font-bold mt-0.5 ${
                 isLight ? 'text-slate-900' : 'text-white'
               }`}>
-                Bambang Prasetyo, S.E, MM-Log
+                Sarirasa Rasasariroti, S.E, MM-Log
               </h1>
               <p className={`text-xs ${isLight ? 'text-slate-600' : 'text-neutral-400'}`}>
-                Koordinator Operasional Pergudangan & Sanitasi · NIP: ADM-MBG/2024/044
+                Koordinator Operasional Pergudangan & Sanitasi · NIP: ADM-MBG/2026/044
               </p>
             </div>
           </div>
